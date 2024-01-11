@@ -92,7 +92,13 @@
 
       <div class="right">
         <div class="ani_image">
-          <img src="image/bike.png" alt="">
+          <img src="image/bike.png" style="width: 500px;" alt="">
+        </div>
+        <div class="ani_image">
+          <img src="image/bike.png" style="width: 500px; margin-left: 350px; margin-top: -200px;" alt="">
+        </div>
+        <div class="ani_image">
+          <img src="image/bike.png" style="width: 500px;margin-left: 150px;margin-top: -100px;" alt="">
         </div>
       </div>
     </div>
@@ -233,7 +239,7 @@
             <button class="btn2">Buy Now</button>
           </div>
           <div class="right">
-            <div class="ani_image">
+            <div class="ani_image1">
               <img src="image/bike2.png" alt="">
             </div>
           </div>
@@ -255,7 +261,7 @@
             <button class="btn2">Buy Now</button>
           </div>
           <div class="right">
-            <div class="ani_image">
+            <div class="ani_image1">
               <img src="image/bike2.png" alt="">
             </div>
           </div>
@@ -618,13 +624,23 @@
 
   <script>
     anime({
-      targets: '.ani_image',
+      targets: '.ani_image1',
       translateX: 70,
       loop: true,
       direction: 'alternate',
       easing: 'easeInOutSine'
     });
   </script>
+
+  
+<script>
+  anime({
+    targets: '.ani_image',
+    translateX: 70,
+    loop: false,
+    easing: 'easeInOutSine'
+  });
+</script>
 </body>
 
 </html>
